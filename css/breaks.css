@@ -1,0 +1,268 @@
+@media only screen and (max-width: 395px) {
+  .right {
+    float: none; }
+  .hamburger {
+    width: 100%;
+    text-align: center; }
+  .logo {
+    padding-left: 0px;
+    text-align: center; }
+    .logo span {
+      display: block; }
+  .no-padding {
+    padding: 0px; }
+  nav {
+    padding: 0px;
+    clear: both; }
+    nav ul li {
+      border-top: 1px solid black;
+      text-align: center; } }
+
+@media only screen and (min-width: 860px) {
+  h1.tag-line {
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px; }
+  h2 {
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px;
+    font-size: 3.5em; }
+  h3 {
+    text-transform: uppercase;
+    text-align: center;
+    padding: 25px;
+    font-size: 1.5em; }
+  h4 {
+    font-size: 2.5em;
+    text-transform: uppercase;
+    padding: 20px;
+    text-align: center; }
+  nav {
+    display: block; }
+    nav ul {
+      padding-top: 0;
+      margin: 0; }
+      nav ul li {
+        padding: 0;
+        margin: 0; }
+      nav ul .nav-item {
+        font-family: GothamMedium;
+        width: auto;
+        display: inline-block;
+        font-size: .9em;
+        padding-right: 0px;
+        padding-top: 17px;
+        padding-bottom: 0px;
+        border: 0px; }
+        nav ul .nav-item a img {
+          width: 1.2em;
+          top: -4px;
+          position: relative; }
+        nav ul .nav-item:last-child {
+          width: 6vw; }
+  .left {
+    float: left; }
+  .right {
+    float: right; }
+  .hamburger {
+    display: none; }
+  .logo {
+    font-family: GothamMedium;
+    padding-left: 10px;
+    letter-spacing: .15em; }
+    .logo img {
+      width: auto; } }
+
+@media only screen and (min-width: 1300px) {
+  h1.tag-line {
+    text-transform: uppercase;
+    font-size: 35px;
+    text-align: center; }
+  h2 {
+    text-transform: uppercase;
+    font-size: 92px;
+    text-align: center; }
+  h3 {
+    text-transform: uppercase;
+    font-size: 24px; }
+  h4 {
+    font-size: 70px;
+    text-transform: uppercase;
+    padding: 20px;
+    text-align: center; }
+  p {
+    margin-bottom: 20px;
+    line-height: 30px; }
+  .container {
+    width: 100%; }
+  .block {
+    margin: 0 auto;
+    padding: 10px; }
+    .block-medium {
+      width: 32%;
+      min-height: 33.4em;
+      height: auto;
+      padding: 20px 10px 0px 10px;
+      margin: 1%;
+      float: left;
+      text-align: center;
+      color: white;
+      position: relative; }
+      .block-medium:first-child {
+        margin-left: 0; }
+      .block-medium:nth-last-child(2) {
+        margin-right: 0px; }
+      .block-medium p a {
+        color: white;
+        text-decoration: underline; }
+    .block .action-wrap {
+      max-width: 10em;
+      margin: 20px auto; }
+    .block .action {
+      width: auto;
+      border-radius: 5px;
+      border: 2px solid;
+      padding: 15px;
+      display: block;
+      text-align: center;
+      text-decoration: none;
+      text-transform: uppercase; }
+      .block .action-white {
+        color: white;
+        border: 2px solid white; }
+      .block .action-black {
+        color: black;
+        border: 2px solid black; }
+  .fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: white; }
+  .navigation {
+    width: 100%;
+    background-color: white;
+    z-index: 100; }
+  .content {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 20px; }
+    .content p {
+      padding: 10px;
+      line-height: 25px; }
+  .block-container {
+    width: 70%;
+    margin: 0 auto; }
+  .logo {
+    font-family: GothamMedium;
+    width: auto;
+    letter-spacing: .15em;
+    padding-left: 10px; }
+    .logo img {
+      vertical-align: middle; }
+  .logo100 {
+    width: 100%; }
+  video {
+    width: 100%; }
+  .background-blk {
+    background-color: black;
+    color: white; }
+  .left {
+    float: left; }
+  .right {
+    float: right; }
+  .center {
+    text-align: center; }
+  .clear::after {
+    content: "";
+    clear: both;
+    display: table; }
+  .no-padding {
+    padding: 0px !important; }
+  nav {
+    display: block; }
+    nav ul {
+      margin: 0;
+      clear: both; }
+      nav ul li {
+        padding: 0;
+        margin: 0; }
+      nav ul .nav-item {
+        font-family: GothamMedium;
+        width: auto;
+        display: inline-block;
+        font-size: 1em;
+        padding-right: 0px;
+        padding-top: 17px;
+        padding-bottom: 0px; }
+        nav ul .nav-item a img {
+          width: 1.2em; }
+      nav ul .nav-item:last-child {
+        width: 6vw; }
+  .hamburger {
+    display: none; }
+  .carousel-content {
+    width: 65%;
+    margin: 0 auto; }
+    .carousel-content .indicator {
+      width: 10%;
+      margin: 0 auto;
+      padding: 20px; }
+      .carousel-content .indicator span {
+        border-radius: 5px;
+        width: 10px;
+        height: 10px;
+        display: inline-block;
+        margin: 5px; }
+        .carousel-content .indicator span a {
+          text-decoration: none;
+          display: block; }
+      .carousel-content .indicator .current {
+        background-color: blue; }
+      .carousel-content .indicator .default {
+        background-color: lightblue; }
+  .footer {
+    width: 100%; }
+    .footer .pull-left {
+      float: left;
+      width: 49%; }
+    .footer .pull-right {
+      float: right;
+      width: 49%; }
+      .footer .pull-right img {
+        width: 4em; }
+    .footer .contact-info {
+      width: 24em;
+      /* min-height: 100px; */
+      text-align: right;
+      font-size: 16px;
+      margin-bottom: 18px;
+      padding-right: 18px;
+      display: block;
+      clear: both; }
+      .footer .contact-info .location {
+        margin: 0 0 10px 0;
+        display: block;
+        font-family: GothamMedium;
+        font-size: 1.2em; }
+      .footer .contact-info .name {
+        display: block;
+        margin: 0 0 5px 0;
+        font-family: GothamMedium;
+        font-size: .9em; }
+      .footer .contact-info .number {
+        display: block;
+        margin: 0 0 5px 0; }
+      .footer .contact-info .email {
+        display: block;
+        margin: 0 0 5px 0; }
+        .footer .contact-info .email a {
+          color: black;
+          text-decoration: none; }
+    .footer .side-red {
+      border-right: 5px solid #B7383F; }
+    .footer .side-blue {
+      border-right: 5px solid #345FA2; }
+    .footer .side-green {
+      border-right: 5px solid #00A35E; } }
