@@ -11,13 +11,13 @@ h1 {
   .hero-title {
     border: 1px solid white;
     width: 50vw;
-    margin: auto;
-    font-size: 8em;
+    padding: 10px;
+    margin: auto;    
     color: white;
     text-align: center;
     padding: 10px;
     position: relative;
-    top: 124px;
+    top: 6.5em;
     overflow-wrap: break-word; }
 
 .heading {
@@ -29,18 +29,22 @@ h1 {
 .block-blurb {
   width: 80%;
   margin: auto;
-  text-align: center;
+  text-align: left;
   margin-top: 60px;
   margin-bottom: 60px;
   background-color: white;
   padding: 35px; }
   .block-blurb img {
-    vertical-align: middle; }
+    vertical-align: middle;
+    padding: 10px 35px 40px 10px;
+  }
 
 .block-small {
   width: 33%;
   float: left;
-  padding: 10px; }
+  padding: 10px; 
+  min-height:30vh;
+}
 
 .section {
   width: auto;
@@ -64,7 +68,7 @@ h1 {
 
 .services {
   color: white;
-  padding: 0 30px; }
+  padding: 0 30px 15px; }
   .services ul {
     margin-left: 20px; }
     .services ul li {
@@ -94,3 +98,9 @@ h1 {
   cursor: pointer;
   background: #98363b;
   margin-top: 5px; }
+
+@media only screen and (min-width: 860px) {
+    .hero-title {
+        /*font-size: 3.5em;*/
+    }
+}
