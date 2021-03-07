@@ -315,6 +315,29 @@ nav {
 .carousel-item:hover .img-top {
   display: inline; }
 
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 1em;
+  padding: 15px;
+  text-align: center;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.carousel-item:hover .overlay {
+  opacity: 1 !important;  
+  z-index:100;
+}
+
+
 .fixed {
   position: fixed;
   top: 0;
@@ -342,7 +365,7 @@ nav {
   .footer .pull-right {
     width: 98%; }
     .footer .pull-right img {
-      width: 4em; }
+      width: 10%; }
   .footer .pull-right:last-child {
     margin: 0; }
   .footer .contact-info {
@@ -622,7 +645,7 @@ nav {
       float: right;
       width: 49%; }
       .footer .pull-right img {
-        width: 4em; }
+        width: 10%; }
     .footer .contact-info {
       width: 24em;
       /* min-height: 100px; */
