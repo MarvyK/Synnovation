@@ -24,7 +24,8 @@ h1 {
   width: 100%;
   padding-top: 50px; }
   .heading h2 {
-    color: #B7383F; }
+    /*color: #B7383F;*/ 
+    color: #a51f26; }
 
 .block-blurb {
   width: 80%;

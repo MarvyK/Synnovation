@@ -208,12 +208,40 @@ video {
   width: 100%; }
   .block img {
     vertical-align: middle; }
+
+  .medium-links ul {
+    list-style-type: none;
+    text-align:center;
+    margin:0;
+    line-height: 30px;
+}
+.medium-links ul li{
+    /*width: 1em;
+    left: -2em;*/
+}
+  .medium-links ul li::before {
+    content: "\f35a";
+    font-family: "Font Awesome 5 Free";
+    padding: 0 10px 0 0;
+    margin:0 5px 0 -32px;
+}
   .block-medium {
     padding: 20px 10px 10px 10px;
-    color: white; }
+    color: white; 
+    
+      min-height: 29em;
+      height: auto;
+      padding: 20px 10px 0px 10px;
+      margin: auto;
+  }
     .block-medium p {
-      text-align: center; }
-      .block-medium p a {
+      text-align: center;
+      margin: 0;
+    }
+      .block-medium a {
+        color: white;
+        text-decoration: none; }
+      .block-medium a:hover,.block-medium a:active{
         color: white;
         text-decoration: underline; }
   .block-full {
@@ -226,10 +254,35 @@ video {
 
 .medium-quote {
   min-height: 5em;
-  font-size: 1.45em; }
+  font-size: 1.1em; }
+
+.med-quote {
+  text-align:center;
+  margin: auto;
+  color: white; 
+  font-family: GothamMedium;
+  display:block;
+  clear:both;
+  min-height:5em;  
+}
+  .med-quote q {
+    display: inline;
+    opacity: .8;
+    line-height: 1em;
+     }
+  .med-quote q:before {
+    content: "\275D"; }
+  .med-quote q:after {
+    content: "\275E"; }
+  .med-quote span {
+    margin:auto;
+    opacity: 0.95;
+    font-size: 0.8em;
+    padding: 0.5em;
+  }
 
 .medium-links {
-  min-height: 12em; }
+  min-height: 8em; }
 
 nav {
   padding: 10px;
@@ -251,7 +304,7 @@ nav {
 
 .action-wrap {
   max-width: 10em;
-  margin: 20px auto; }
+  margin: 10px auto; }
 
 .action {
   width: auto;
@@ -279,13 +332,13 @@ nav {
   background-color: black; }
 
 .red {
-  background-color: #B7383F; }
+  background-color: #BB1306; }
 
 .blue {
-  background-color: #345FA2; }
+  background-color: #005696; }
 
 .green {
-  background-color: #00A35E; }
+  background-color: #1e8650; }
 
 .grey {
   background-image: url("../media/greybackground.png");
@@ -377,32 +430,36 @@ nav {
       margin: 0 0 10px 0;
       display: block;
       font-family: GothamMedium;
-      font-size: 1.2em;
+      font-size: 0.9em;
       padding-right: 15px; }
     .footer .contact-info .name {
       display: block;
       margin: 0 0 5px 0;
       font-family: GothamMedium;
-      font-size: .9em;
+      font-size: 0.8em;
       padding-right: 15px; }
     .footer .contact-info .number {
       display: block;
       margin: 0 0 5px 0;
-      padding-right: 15px; }
+      padding-right: 15px; 
+      font-size: 0.8em;
+    }
     .footer .contact-info .email {
       display: block;
       margin: 0 0 5px 0;
       padding-right: 15px;
-      overflow-wrap: break-word; }
+      overflow-wrap: break-word; 
+      font-size: 0.8em;
+    }
       .footer .contact-info .email a {
         color: black;
         text-decoration: none; }
   .footer .side-red {
-    border-right: 5px solid #B7383F; }
+    border-right: 5px solid #bb1306; }
   .footer .side-blue {
-    border-right: 5px solid #345FA2; }
+    border-right: 5px solid #0D4F99; }
   .footer .side-green {
-    border-right: 5px solid #00A35E; }
+    border-right: 5px solid #0D9447; }
 
 .clearfix {
   overflow: auto; }
@@ -510,12 +567,18 @@ nav {
     line-height: 30px; }
   .container {
     width: 100%; }
+  .medium-links ul {
+    list-style-type: none;
+    text-align:left;
+    margin:0 0 0 10%;
+    line-height: 30px;
+}
   .block {
     margin: 0 auto;
     padding: 10px; }
     .block-medium {
       width: 32%;
-      min-height: 33.4em;
+      min-height: 27em;
       height: auto;
       padding: 20px 10px 0px 10px;
       margin: 1%;
@@ -527,9 +590,18 @@ nav {
         margin-left: 0; }
       .block-medium:nth-last-child(2) {
         margin-right: 0px; }
+      .block-medium p {
+      text-align: left;
+      margin: 0 0 0 15%;
+    }
+        
       .block-medium p a {
         color: white;
+        text-decoration: none; }
+      .block-medium p a:hover, .block-medium p a:active{
+        color: white;
         text-decoration: underline; }
+
     .block .action-wrap {
       max-width: 10em;
       margin: 20px auto; }
@@ -659,27 +731,31 @@ nav {
         margin: 0 0 10px 0;
         display: block;
         font-family: GothamMedium;
-        font-size: 1.2em; }
+        font-size: 0.9em; }
       .footer .contact-info .name {
         display: block;
         margin: 0 0 5px 0;
         font-family: GothamMedium;
-        font-size: .9em; }
+        font-size: 0.8em; }
       .footer .contact-info .number {
         display: block;
-        margin: 0 0 5px 0; }
+        margin: 0 0 5px 0; 
+        font-size: 0.8em;
+      }
       .footer .contact-info .email {
         display: block;
-        margin: 0 0 5px 0; }
+        margin: 0 0 5px 0; 
+        font-size: 0.8em; 
+      }
         .footer .contact-info .email a {
           color: black;
           text-decoration: none; }
     .footer .side-red {
-      border-right: 5px solid #B7383F; }
+      border-right: 5px solid #bb1306; }
     .footer .side-blue {
-      border-right: 5px solid #345FA2; }
+      border-right: 5px solid #0D4F99; }
     .footer .side-green {
-      border-right: 5px solid #00A35E; } }
+      border-right: 5px solid #0D9447; } }
 
 * {
   box-sizing: border-box; }
