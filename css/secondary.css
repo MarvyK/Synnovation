@@ -5,8 +5,8 @@ h1 {
 .hero {
   width: 100%;
   height: auto;
-  min-height: 50vh;
-  background-image: url("../media/hero01.png");
+  min-height: 49vh;
+  background-image: url("../media/hero02.png");
   background-size: cover; }
   .hero-title {
     border: 1px solid white;
@@ -22,10 +22,16 @@ h1 {
 
 .heading {
   width: 100%;
-  padding-top: 50px; }
+  padding-top: 2em; }
   .heading h2 {
     /*color: #B7383F;*/ 
     color: #a51f26; }
+  .heading h3 {
+    color: #a51f26;
+    }  
+  .heading h5 .theRed{
+    color: #a51f26;
+    }
 
 .block-blurb {
   width: 80%;
@@ -68,7 +74,8 @@ h1 {
   display: none; }
 
 .services {
-  color: white;
+  /*color: white;*/
+  color: black;
   padding: 0 30px 15px; }
   .services ul {
     margin-left: 20px; }
@@ -97,11 +104,74 @@ h1 {
 .ui-accordion h3 {
   text-align: left;
   cursor: pointer;
-  background: #98363b;
+  /*background: #98363b;*/
   margin-top: 5px; }
 
+.syn-img {
+    padding: 30px 35px 30px 10px !important;
+}
+
+@media only screen and (max-width: 859px) {
+    .content-block-image {
+        width: 100%;
+    }
+}
 @media only screen and (min-width: 860px) {
+    .content-block-image {
+        width: 60%;
+    }
+}
+@media only screen and (min-width: 1300px) {
     .hero-title {
         /*font-size: 3.5em;*/
     }
+    .content-block-image {
+        width: 60%;
+    }
 }
+.accordion {
+            background-color: #eee;
+            color: #444;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            transition: 0.4s;
+            margin: 15px 0 0 0;
+        }
+    .accordion.heading {
+            color: #a51f26;
+            font-family: GothamMedium;  
+            font-size: 1.5em;
+    }
+
+            .active, .accordion:hover {
+                background-color: #ccc;
+            }
+
+            .accordion:before {
+                content: '\002B';
+                color: #777;
+                font-weight: bold;
+                float: left;
+                margin-right: 10px;
+            }
+
+        .active:before {
+            content: "\2212";
+        }
+
+        .panel {
+            padding: 0 18px;
+            background-color: white;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+        }
+        .theRed {color:#a51f26!important}
+        .theGreen {color:#1e8650!important}
+        .theBlue {color:#005696!important}
+        .heading h5 .theGreen {color:#1e8650}

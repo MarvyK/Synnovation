@@ -25,8 +25,10 @@
                 </div>
                 <div class="logo left">
                     <!-- <img src="media/logo-small.png"> -->
-                    <img src="media/logo.png" />
-                    <span>SynNovation Solutions</span>
+                    <a href="index.html">
+                        <img src="media/logo.png" />
+                        <span>SynNovation Solutions</span>
+                    </a>
                     <span class="hamburger"><a href=""><img src="media/hamburger-icon-3.png" width="32" height="32"/></a></span>
                 </div>
                 <nav class="right">
@@ -66,12 +68,12 @@
                         </div>
                         <div class="medium-links">
                             <ul class="ul">
-                                <li><a href="">Catalyst-Led</a></li>
-                                <li><a href="">Cross-Sectoral Collaboration</a></li>
-                                <li><a href="">End-To-End Creative Change</a></li>
+                                <li><a href="ourservices.html#catalyst_led">Catalyst-Led</a></li>
+                                <li><a href="ourservices.html#cross_sectoral">Cross-Sectoral Collaboration</a></li>
+                                <li><a href="ourservices.html#end_to_end">End-To-End Creative Change</a></li>
                             </ul>                            
                         </div>
-                        <div class="action-wrap"><a href="ourservices.html" class="action action-white">Learn More</a></div>
+                        <div class="action-wrap"><a href="ourservices.html#catalyst_led" class="action action-white">Learn More</a></div>
                     </div>
                     <div class="block-medium green">
                         <h3>INNOVATION &amp; IDEATION</h3>
@@ -83,29 +85,29 @@
                         </div>
                         <div class="medium-links">
                             <ul class="ul">
-                                <li><a href="">Innovation Stratey</a></li>
-                                <li><a href="">Organisational Climate and Culture Strategy</a></li>
-                                <li><a href="">Innovating with Stakeholders</a></li>
+                                <li><a href="ourservices.html#innovation_strategy">Innovation Strategy</a></li>
+                                <li><a href="ourservices.html#organisational_climate_culture">Organisational Climate and Culture Strategy</a></li>
+                                <li><a href="ourservices.html#innovating_stakeholders">Innovating with Stakeholders</a></li>
                             </ul>
                         </div>
-                        <div class="action-wrap"><a href="" class="action action-white">Learn More</a></div>
+                        <div class="action-wrap"><a href="ourservices.html#innovation_strategy" class="action action-white">Learn More</a></div>
                     </div>
-                    <div class="block-medium blue">
+                    <div id="wide" class="block-medium blue">
                         <h3>SKILLS &amp; DEVELOPMENT</h3>
                         <!--<div class="medium-quote">
-                            <p><em>"Tell me and I forget, teach me and I may remember, involve me and I learn."</em><br /> - Albert Einstein</p>
-                        </div>-->
+            <p><em>"Tell me and I forget, teach me and I may remember, involve me and I learn."</em><br /> - Albert Einstein</p>
+        </div>-->
                         <div class="med-quote">
                             <em><q>Tell me and I forget, teach me and I may remember, involve me and I learn.</q></em><br /><span> – Albert Einstein</span><br clear="all" />
                         </div>
                         <div class="medium-links">
                             <ul class="ul">
-                                <li><a href="">Innovation Skills</a></li>
-                                <li><a href="">Innovation and Culture Change</a></li>
-                                <li><a href="">Innovation in Education</a></li>
+                                <li><a href="ourservices.html#innovation_skills">Innovation Skills</a></li>
+                                <li><a href="ourservices.html#innovation_and_culture_change">Innovation and Culture Change</a></li>
+                                <li><a href="ourservices.html#innovation_in_education">Innovation in Education</a></li>
                             </ul>
                         </div>
-                        <div class="action-wrap"><a href="" class="action action-white">Learn More</a></div>
+                        <div class="action-wrap"><a href="ourservices.html#innovation_skills" class="action action-white">Learn More</a></div>
                     </div>
 
                     <div class="block-full black">
@@ -248,6 +250,17 @@
             </div>
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
             <script type="text/javascript" src="scripts/functionality.js"></script>
+            <script type="text/javascript">
+                function checkWidth() {
+                    if ($(window).width() < 1300) {
+                        $('#wide').addClass('wide');
+                    } else {
+                        $('#wide').removeClass('wide');
+                    }
+                }
+
+                $(window).resize(checkWidth);                
+            </script>
     </body>
 
 </html>
