@@ -1,0 +1,342 @@
+﻿/*default version*/
+@font-face {
+	font-family: 'SynNovationFont';	
+	src: 
+		local('SynNovationFont'),
+		local('SynNovation-Font'),
+		url('fonts/Gotham-Book.otf') 
+		format('opentype');
+}
+/*bold version*/
+@font-face {
+	font-family: 'SynNovationBOLDFont';	
+	src: 
+		local('SynNovationBOLDFont'),
+		local('SynNovationBOLD-Font'),
+		url('fonts/Gotham-Medium.otf') 
+		format('opentype');
+	font-weight: bold;
+}
+/*span elements inside the container div*/
+.quotes { font-weight: bold; }
+
+body {
+            margin: 0;
+            font-size: 1em;
+            font-family: "SynNovationFont", sans-serif;
+        }
+
+        .header {
+            background-color: #f1f1f1;
+            padding: 30px;
+            text-align: center;
+        }
+
+        #navbar {
+            overflow: hidden;
+            background-color: #252525;
+            color:#ffffff;
+        }        
+
+            #navbar a {
+                float: left;
+                display: block;
+                color: #f2f2f2;
+                text-align: center;
+                /*padding: 14px 16px;*/
+                text-decoration: none;
+                /*font-size: 17px;*/
+            }
+
+                #navbar a:hover {
+                    background-color: #ddd;
+                    color: black;
+                }
+
+                #navbar a.active {
+                    background-color: #4CAF50;
+                    color: white;
+                }
+
+        .content {
+            padding: 16px 16px 16px 5%;
+
+        }
+
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+
+        }
+
+            .sticky + .content {
+                padding-top: 120px;
+            }
+
+.wrapper { 
+  /*border : 2px solid #000;*/ 
+  overflow:hidden;
+}
+
+.wrapper div {
+   /*min-height: 200px;*/
+   max-height: 100px;
+   padding: 10px;
+}
+#one {
+  background-color: #252525;
+  float:left;   
+  width:30%;  
+  /*border-right:2px solid #000;*/
+}
+#two { 
+  background-color: #ffffff;
+  /*overflow:hidden;*/  
+  /*border:2px dashed #ccc;*/  
+}
+
+.frame {
+    height: 63px;      /* equals max image height */
+    width: 111px;    
+    white-space: nowrap;    
+    text-align: center; margin: 1em 0;
+}
+
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+img.toplogo {    
+    vertical-align: middle;
+    max-height: 63px;
+    max-width: 111px;
+}
+.size21 {
+    font-size: 1.5em;
+}
+.quote {font-size:1.5em;}
+.contact {font-size:1em;}
+.contactBl1,.contactBl2,.contactBl3{display: block; text-align: right; margin: 0 1% 0 0; float:right; height:85px;}
+
+@media screen and (max-width: 400px) {
+   #one { 
+    float: none;
+    margin-right:0;
+    width:auto;
+    border:0;
+    border-bottom:2px solid #000;    
+  }
+   .frame {
+    height: 100%;      /* equals max image height */
+    width: 111px;    
+    white-space: nowrap;    
+    text-align: center; margin: 1em 0;
+    }
+   .size21 {
+    font-size: 0.9em;
+}
+    p.quotes {
+        font-size: 1em!important;
+        line-height: 1em!important;
+    }
+    .quote {font-size:1.2em;}
+    .contact {font-size:0.75em;}
+    .contactBl1, .contactBl2,.contactBl3{display: block; text-align: right; margin: 0 1% 0 0; float:right; height:65px;}
+    /*{display: block; text-align: right; margin: 0 1% 0 0; float:right; height:65px;}*/
+}
+.responsive {
+  width: 100%;
+  /*max-width: 50px;*/
+  height: auto;
+}
+.topheader {
+padding: 0.5% 0 0.5% 5%;}
+.secondheader {
+padding: 0.05% 0 0.05% 5%;
+
+}
+
+.shadow {    
+  -moz-box-shadow:    3px 3px 6px 6px #c7c7c7;
+  -webkit-box-shadow: 3px 3px 6px 6px #c7c7c7;
+  box-shadow:         3px 3px 6px 6px #c7c7c7;
+}
+.bb{border-bottom: 1px solid #a1a1a1;}
+.vidcenter { margin: 0 auto; width: 100%; }
+
+
+
+
+/* CONTACT US */
+.container{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 0 50px 0;
+    color:#ffffff;
+}
+
+.container:after{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: url("img/bg.jpg") no-repeat center;
+	background-size: cover;
+	filter: blur(50px);
+	z-index: -1;
+}
+.contact-box{
+	max-width: 1920px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: #ffffff;
+	box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+    color:#000000;
+}
+
+.left{
+	background: url("synnovatebgg50.jpg") no-repeat center;
+	background-size: cover;
+	height: 100%;    
+}
+
+.right{
+	/*padding: 25px 5% 25px 40px;*/
+    margin: 25px 5% 25px 40px;
+}
+.dtext {
+opacity: 1 !important;}
+
+h2{
+	position: relative;
+	padding: 0 0 10px;
+	margin-bottom: 10px;
+}
+
+h2:after{
+	content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+    background-color: #2ecc71;
+}
+
+.field{
+	width: 100%;
+	border: 2px solid rgba(0, 0, 0, 0);
+	outline: none;
+	background-color: rgba(230, 230, 230, 0.6);
+	padding: 0.5rem 1rem;
+	font-size: 1.1rem;
+	margin-bottom: 22px;
+	transition: .3s;
+    color:#000000 !important;
+}
+
+.field:hover{
+	background-color: #FFFFFF;
+}
+
+textarea{
+	min-height: 150px;
+}
+
+.btn{
+	width: 40%;
+	padding: 0.5rem 1rem;
+	background-color: #3560a4;
+	color: #fff;
+	font-size: 1.1rem;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: .3s;
+}
+
+.btn:hover{
+    background-color: #00a35e;
+}
+
+.field:focus{
+    border: 2px solid rgba(30,85,250,0.47);
+    background-color: #fff;
+}
+
+@media screen and (max-width: 880px){
+	.contact-box{
+		grid-template-columns: 1fr;
+	}
+	.left{
+		height: 200px;
+	}
+}
+
+.hero { 
+  position: relative; 
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('https://placekitten.com/1200/800');
+  background-size: cover;  
+  
+}
+.dark {
+    min-height:35em;
+    background: #000000;
+    color:#ffffff;
+}
+.dark h1{font-size:3em; text-align:center; font-weight:normal}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #ffffff;
+   color: white;
+   text-align: center;
+}
+
+.has-bg-img:after {
+    content:'';
+
+    background: url('http://placehold.it/500x100') no-repeat center center;
+    position: absolute;
+    top:0px;
+    left: 0px;
+    width:100%;
+    height:100%;
+    z-index:-1;
+    opacity: 0.1; /* Here is your opacity */
+}
+.has-bg-img {
+    position: relative;
+    width:100%;
+    padding:50px;
+    font-weight:bold;
+    text-align:center;
+}
+
+/* VIDEO IMAGE BG*/
+video {
+  width: 100%;
+  height: auto;
+}
+
