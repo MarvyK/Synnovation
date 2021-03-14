@@ -1,111 +1,163 @@
 h1 {
-  text-align: center;
-  text-transform: uppercase; }
+    text-align: center;
+    text-transform: uppercase;
+}
 
 .hero {
-  width: 100%;
-  height: auto;
-  min-height: 49vh;
-  background-image: url("../media/hero02.png");
-  background-size: cover; }
-  .hero-title {
+    width: 100%;
+    height: auto;
+    min-height: 49vh;
+    background-image: url("../media/hero02.png");
+    background-size: cover;
+}
+
+.hero-title {
     border: 1px solid white;
     width: 50vw;
     padding: 10px;
-    margin: auto;    
+    margin: auto;
     color: white;
     text-align: center;
     padding: 10px;
     position: relative;
     top: 6.5em;
-    overflow-wrap: break-word; }
+    overflow-wrap: break-word;
+}
 
 .heading {
-  width: 100%;
-  padding-top: 2em; }
-  .heading h2 {
-    /*color: #B7383F;*/ 
-    color: #a51f26; }
-  .heading h3 {
+    width: 100%;
+    padding-top: 2em;
+}
+
+.heading h2 {
+    /*color: #B7383F;*/
     color: #a51f26;
-    }  
-  .heading h5 .theRed{
+}
+
+.heading h3 {
     color: #a51f26;
-    }
+}
+
+.heading h5 .theRed {
+    color: #a51f26;
+}
 
 .block-blurb {
-  width: 80%;
-  margin: auto;
-  text-align: left;
-  margin-top: 60px;
-  margin-bottom: 60px;
-  background-color: white;
-  padding: 35px; }
-  .block-blurb img {
+    width: 80%;
+    margin: auto;
+    text-align: left;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    background-color: white;
+    padding: 35px;
+}
+
+.block-blurb img {
     vertical-align: middle;
     padding: 10px 35px 40px 10px;
-  }
+}
 
 .block-small {
-  width: 33%;
-  float: left;
-  padding: 10px; 
-  min-height:30vh;
+    width: 33%;
+    float: left;
+    padding: 10px;
+    min-height: 30vh;
+}
+
+.block-profile {
+    width: auto;
+}
+
+.block-profile h3 {
+    font-size: 40px;
+    text-align: left;
+}
+
+.block-profile img.profile-img {
+    width: 30%;
+    min-height: 100px;
+    padding: 15px;
 }
 
 .section {
-  width: auto;
-  padding-top: 30px;
-  overflow: hidden; }
-  .section h5 {
-    font-size: 36px; }
-  .section h6 {
-    padding-top: 30px; }
-  .section-sub {
+    width: auto;
+    padding-top: 30px;
+    overflow: hidden;
+}
+
+.section h5 {
+    font-size: 36px;
+}
+
+.section h6 {
+    padding-top: 30px;
+}
+
+.section-sub {
     padding: 0;
     margin: 0;
-    overflow: hidden; }
+    overflow: hidden;
+}
 
 .gutter {
-  margin-top: 70px;
-  margin-bottom: 70px; }
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
 
 .toggle {
-  display: none; }
+    display: none;
+}
 
 .services {
-  /*color: white;*/
-  color: black;
-  padding: 0 30px 15px; }
-  .services ul {
-    margin-left: 20px; }
-    .services ul li {
-      line-height: 2em; }
-  .services p {
+    /*color: white;*/
+    color: black;
+    padding: 0 30px 15px;
+}
+
+.services ul {
+    margin-left: 20px;
+}
+
+.services ul li {
+    line-height: 2em;
+}
+
+.services p {
     padding-top: 10px;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+}
 
 .quote {
-  width: 50%;
-  margin: auto;
-  color: white; }
-  .quote q {
+    width: 50%;
+    margin: auto;
+    color: white;
+}
+
+.quote q {
     display: inline;
     opacity: .4;
-    font-family: GothamMedium; }
-  .quote q:before {
-    content: "\275D"; }
-  .quote q:after {
-    content: "\275E"; }
-  .quote span {
+    font-family: GothamMedium;
+}
+
+.quote q:before {
+    content: "\275D";
+}
+
+.quote q:after {
+    content: "\275E";
+}
+
+.quote span {
     float: right;
-    font-size: .4em; }
+    font-size: .4em;
+}
 
 .ui-accordion h3 {
-  text-align: left;
-  cursor: pointer;
-  /*background: #98363b;*/
-  margin-top: 5px; }
+    text-align: left;
+    cursor: pointer;
+    /*background: #98363b;*/
+    margin-top: 5px;
+}
 
 .syn-img {
     padding: 30px 35px 30px 10px !important;
@@ -116,11 +168,13 @@ h1 {
         width: 100%;
     }
 }
+
 @media only screen and (min-width: 860px) {
     .content-block-image {
         width: 60%;
     }
 }
+
 @media only screen and (min-width: 1300px) {
     .hero-title {
         /*font-size: 3.5em;*/
@@ -129,49 +183,64 @@ h1 {
         width: 60%;
     }
 }
+
 .accordion {
-            background-color: #eee;
-            color: #444;
-            cursor: pointer;
-            padding: 18px;
-            width: 100%;
-            border: none;
-            text-align: left;
-            outline: none;
-            font-size: 15px;
-            transition: 0.4s;
-            margin: 15px 0 0 0;
-        }
-    .accordion.heading {
-            color: #a51f26;
-            font-family: GothamMedium;  
-            font-size: 1.5em;
-    }
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    margin: 15px 0 0 0;
+}
 
-            .active, .accordion:hover {
-                background-color: #ccc;
-            }
+.accordion.heading {
+    color: #a51f26;
+    font-family: GothamMedium;
+    font-size: 1.5em;
+}
 
-            .accordion:before {
-                content: '\002B';
-                color: #777;
-                font-weight: bold;
-                float: left;
-                margin-right: 10px;
-            }
+.active,
+.accordion:hover {
+    background-color: #ccc;
+}
 
-        .active:before {
-            content: "\2212";
-        }
+.accordion:before {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: left;
+    margin-right: 10px;
+}
 
-        .panel {
-            padding: 0 18px;
-            background-color: white;
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.2s ease-out;
-        }
-        .theRed {color:#a51f26!important}
-        .theGreen {color:#1e8650!important}
-        .theBlue {color:#005696!important}
-        .heading h5 .theGreen {color:#1e8650}
+.active:before {
+    content: "\2212";
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.theRed {
+    color: #a51f26!important
+}
+
+.theGreen {
+    color: #1e8650!important
+}
+
+.theBlue {
+    color: #005696!important
+}
+
+.heading h5 .theGreen {
+    color: #1e8650
+}
