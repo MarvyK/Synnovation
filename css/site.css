@@ -221,6 +221,10 @@ p {
     line-height: 30px;
 }
 
+p.center-image {
+    text-align: center;
+}
+
 .logo {
     font-family: GothamMedium;
     letter-spacing: .15em;
