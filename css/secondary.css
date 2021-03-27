@@ -10,6 +10,15 @@ h1 {
     background-image: url("../media/hero02.png");
     background-size: cover;
 }
+.hero.about_us {
+background-image: url("../media/about_us.png");}
+.hero.news {
+background-image: url("../media/news.png");
+}
+.hero.contact_us {
+background-image: url("../media/contact_us.png");
+}
+
 
 .hero-title {
     border: 1px solid white;

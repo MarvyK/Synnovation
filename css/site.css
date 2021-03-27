@@ -377,7 +377,7 @@ nav ul .nav-item a img {
 .selected {
     text-decoration: underline !important;
     text-decoration-style: solid!important;
-    text-decoration-thickness: 7px !important;
+    text-decoration-thickness: 3px !important;
 }
 
 .show {
@@ -446,31 +446,6 @@ nav ul .nav-item a img {
     padding: 10px;
     line-height: 25px;
 }
-
-.carousel-item {
-    display: inline-block;
-    max-width: 23%;
-    /* border: 1px solid red; */
-    position: relative;
-}
-
-.carousel-item img {
-    max-width: 100%;
-}
-
-.carousel-item .img-top {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 99;
-}
-
-.carousel-item:hover .img-top {
-    display: inline;
-}
-
-
 /* The overlay effect - lays on top of the container and over the image */
 
 .overlay {
@@ -496,6 +471,55 @@ nav ul .nav-item a img {
     opacity: 1 !important;
     z-index: 100;
 }
+
+.carousel-item {
+    display: inline-block;
+    max-width: 23%;
+    /* border: 1px solid red; */
+    position: relative;
+}
+.carousel-item.team {
+    display: block;
+    max-width: 25%;
+    /* border: 1px solid red; */
+    position: relative;
+    padding: 0 35px 35px 0;
+    float:left;
+}
+.carousel-item.team .overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    /* Black see-through */
+    color: #f1f1f1;
+    width: 89%;
+    transition: .5s ease;
+    opacity: 0;
+    color: white;
+    font-size: 1em;
+    padding: 15px 35px 15px 35px ;    
+    text-align: center;
+}
+
+.carousel-item img {
+    max-width: 100%;
+}
+
+.carousel-item .img-top {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+.carousel-item:hover .img-top {
+    display: inline;
+}
+
+
+
 
 .fixed {
     position: fixed;
@@ -764,6 +788,10 @@ nav ul .nav-item a img {
         text-transform: uppercase;
         padding: 20px;
         text-align: center;
+    }
+    h6 {
+        text-transform: uppercase;
+        font-size: 21px;
     }
     p {
         margin-bottom: 20px;
@@ -1119,4 +1147,12 @@ nav ul .nav-item a img {
 .left a {
     text-decoration: none;
     color: #000000;
+}
+.teamquote {width:70% !important;
+            margin: -65px 0 50px 0!important;
+}
+h3.h6_team {font-size: 1.2em !important;}
+.quote .teamName {
+    font-size: .6em;
+    padding: 20px;
 }
