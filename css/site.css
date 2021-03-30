@@ -196,14 +196,14 @@ h1.tag-line {
 }
 
 h2 {
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     text-align: center;
     padding: 10px;
     font-size: 1.5em;
 }
 
 h3 {
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     text-align: center;
     padding: 25px;
     font-size: 1.5em;
@@ -668,13 +668,13 @@ nav ul .nav-item a img {
         padding: 10px;
     }
     h2 {
-        text-transform: uppercase;
+        /*text-transform: uppercase;*/
         text-align: center;
         padding: 10px;
         font-size: 3.5em;
     }
     h3 {
-        text-transform: uppercase;
+        /*text-transform: uppercase;*/
         text-align: center;
         padding: 25px;
         font-size: 1.5em;
@@ -774,13 +774,13 @@ nav ul .nav-item a img {
         text-align: center;
     }
     h2 {
-        text-transform: uppercase;
+        /*text-transform: uppercase;*/
         /*font-size: 92px;*/
-        font-size: 4.5em;
+        font-size: 3.5em;
         text-align: center;
     }
     h3 {
-        text-transform: uppercase;
+        /*text-transform: uppercase;*/
         font-size: 24px;
     }
     h4 {

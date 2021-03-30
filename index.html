@@ -1,6 +1,5 @@
 ﻿<!DOCTYPE html>
 <html>
-
     <head>
         <title>SynNovation - How we make innovation happen</title>
         <meta charset="utf-8">
@@ -39,18 +38,19 @@
                         <li class="nav-item"><a href="news.html">News</a></li>
                         <li class="nav-item"><a href="contactus.html">Contact Us</a></li>
                         <li class="nav-item">
-                            <a href="https://www.facebook.com/synnovation"><img src="media/fb1.png" alt=""></a>
-                            <a href="http://www.linkedin.com/pub/truida-prekel/0/96b/a09"><img src="media/linkedIn.png" alt=""></a>
+                            <a href="https://www.facebook.com/synnovation" target="_blank"><img src="media/fb1.png" alt=""></a>
+                            <a href="https://www.linkedin.com/company/synnovation-south-africa/about/" target="_blank"><img src="media/linkedIn.png" alt=""></a>
                         </li>
                     </ul>
                 </nav>
             </div>
             <div class="block grey no-padding">
 
-                <video controls autoplay="true" loop="true" muted="true">
-                    <source src="http://synnovation.co.za/stage/Synnovation_Video.mp4" type="video/mp4">
-                    <img src="media/android-chrome-192x192.png"/>
-                  </video>
+                <video id="SynVid" controls autoplay="true" loop="true" muted="false" playsinline>
+                    <source src="http://samford.co.za/staging/synnovation/Synnovation video-FINAL.mp4" type="video/mp4">
+                    <img src="media/android-chrome-192x192.png" />
+                </video>               
+                
             </div>            
             <div class="block">
                 <h4>About Us</h4>
@@ -210,8 +210,8 @@ We use our recipe, with your ingredients to amplify critical and analytical thin
                             <span class="email"><a href="mailto:LMSobey@synnovation.co.za">LMSobey@synnovation.co.za</a></span>
                         </div>
                         <div class="contact-info pull-right">
-                            <a href="https://www.facebook.com/synnovation"><img src="media/fb1.png" alt=""></a>
-                            <a href="http://www.linkedin.com/pub/truida-prekel/0/96b/a09"><img src="media/linkedIn.png" alt=""></a>
+                            <a href="https://www.facebook.com/synnovation" target="_blank"><img src="media/fb1.png" alt=""></a>
+                            <a href="https://www.linkedin.com/company/synnovation-south-africa/about/" target="_blank"><img src="media/linkedIn.png" alt=""></a>
                         </div>
                     </div>
                 </div>
@@ -229,6 +229,35 @@ We use our recipe, with your ingredients to amplify critical and analytical thin
             }
 
             $(window).resize(checkWidth);
+            function vidfunction() {                
+                var theVideo = document.getElementById("SynVid");
+                //setTimeout(function () { theVideo.muted = false; }, 1000);
+                //setTimeout(function () { theVideo.autoplay = false; }, 1000);
+                //setTimeout(function () { document.getElementById("SynVid").attributes. }, 3000);
+                //var video = document.getelementbyid("synvid")
+                //video.autoplay = true;
+                //settimeout(function () { video.muted = false; }, 3000);
+                
+                //
+            }
+            //function toggleMute() {
+
+            //    var video = document.getElementById("SynVid")
+
+            //    if (video.muted) {
+            //        video.muted = false;
+            //    } else {
+            //        video.muted = true;
+            //    }
+
+            //}
+            //function togglePlay() {
+            //    var video = document.getElementById("SynVid")                
+            //    video.autoplay = true;
+            //}
+            //window.onload = function () {
+            //    setTimeout(function () { document.getElementById('btn').click() }, 1500);             
+            //}
         </script>
     </body>
 

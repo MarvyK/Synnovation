@@ -1,22 +1,22 @@
 h1 {
     text-align: center;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
 }
 
 .hero {
     width: 100%;
     height: auto;
     min-height: 49vh;
-    background-image: url("../media/hero02.png");
+    background-image: url("../media/Services_HEADER2.jpg");
     background-size: cover;
 }
 .hero.about_us {
-background-image: url("../media/about_us.png");}
+background-image: url("../media/About-Us_HEADER2.jpg");}
 .hero.news {
 background-image: url("../media/news.png");
 }
 .hero.contact_us {
-background-image: url("../media/contact_us.png");
+background-image: url("../media/Contact-Us_HEADER.2.jpg");
 }
 
 
@@ -144,15 +144,15 @@ background-image: url("../media/contact_us.png");
 
 .quote q {
     display: inline;
-    opacity: .4;
+    /*opacity: .4;*/
     font-family: GothamMedium;
 }
 
-.quote q:before {
+q:before {
     content: "\275D";
 }
 
-.quote q:after {
+q:after {
     content: "\275E";
 }
 
