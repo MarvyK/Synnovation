@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+
+Sitemap: https://synnovation.co.za/sitemap.xml
+
