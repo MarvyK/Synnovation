@@ -76,7 +76,8 @@ background-image: url("../media/SynNovation_Contact_Us_Head.png");
 
 .block-blurb img {
     vertical-align: middle;
-    padding: 10px 35px 40px 10px;
+    /*padding: 10px 35px 40px 10px;*/
+    padding: 10px;
 }
 
 .block-small {
@@ -293,7 +294,7 @@ q:after {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    padding-top: 200px; /* Location of the box */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -302,16 +303,17 @@ q:after {
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
-.myBtn {cursor: pointer;}
+.myBtn {cursor: pointer; font-size:1.2em}
 
 /* Modal Content */
 .modal-content {
     background-color: #fefefe;
     margin: auto;
-    padding: 20px;
+    padding: 5px;
     border: 1px solid #888;
     width: 50%;
 }
+.modal-content img {width:100%;}
 
 /* The Close Button */
 .close {
