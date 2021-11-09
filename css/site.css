@@ -1305,6 +1305,14 @@ h3.h6_team {font-size: 1.2em !important;}
     float: left;
     width: 50%;
   }
+.column40 {
+    float: left;
+    width: 40%;
+}
+.column10 {
+    float: left;
+    width: 10%;
+}
   
   /* Clear floats after the columns */
   .row:after {
