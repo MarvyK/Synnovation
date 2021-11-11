@@ -1320,3 +1320,15 @@ h3.h6_team {font-size: 1.2em !important;}
     display: table;
     clear: both;
   }
+
+@media only screen and (max-width: 480px) {
+    .column40 {
+        float: left;
+        width: 100%;
+    }
+
+    .column10 {
+        float: left;
+        width: 0%;
+    }
+}
