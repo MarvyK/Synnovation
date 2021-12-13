@@ -194,6 +194,11 @@ q:after {
     .theright{
         float: right;
     }
+.headlineImg {
+    padding-right:30px !important;
+    width:100%;
+}
+
 
 @media only screen and (max-width: 859px) {
     
@@ -208,6 +213,10 @@ q:after {
     .left content-block-image profile-img {
         margin: 0% auto;text-align: center!important;
     }
+    .headlineImg {
+        padding-right: 30px !important;
+        width: 100%;
+    }
 
 }
 
@@ -215,6 +224,11 @@ q:after {
     .content-block-image {
         width: 60%;
     }
+    .headlineImg {
+        padding-right: 30px !important;
+        width: 100%;
+    }
+
 }
 
 @media only screen and (min-width: 1300px) {
@@ -294,14 +308,14 @@ q:after {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
-    padding-top: 200px; /* Location of the box */
+    padding-top: 180px; /* Location of the box */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    background-color: rgba(0,0,0,1); /* Black w/ opacity */
 }
 .myBtn {cursor: pointer; font-size:1.2em}
 
@@ -448,89 +462,177 @@ q:after {
  .big-script p {
 	 margin: 0;
 }
- 
- @media (max-width: 413px) {
-	 .grid-container {
-		 grid-template-columns: 1fr 1fr;
-		 /*grid-auto-rows: auto;*/
-         display: block;
-	}
-	 .card {
-		 min-height: 12.8rem;
-	}
-     .onepointfive {font-size: 0.75em}
-}
- @media (min-width: 627px) {
-	 .grid-container {
-		 grid-gap: 1rem;
-         display: block;
-	}
-	 .card__side-by-side--m {
-		 flex-flow: row nowrap;
-	}
-	 .card__side-by-side--m img {
-		 min-height: 100%;
-	}
-	 .card--featured {
-		 grid-row: auto / span 2;
-		 grid-column: -1;
-	}
-     .onepointfive {font-size: 1em}
-}
- @media (min-width: 836px) {
-	 .padding-large--l {
-		 padding: 3.2rem;
-	}
-     
-}
- @media (min-width: 837px){
-     .onepointfive {font-size: 1.5em}
-      .grid-container {
-	 margin: auto;
-	 display: grid;
-	 grid-gap: 1.1312rem;
-	 grid-template-columns: repeat(auto-fit, 12.8rem);
-	 grid-auto-rows: 12.8rem;
-	 grid-auto-flow: dense;
-	 justify-content: center;
-	 max-width: 75em;
-}
- }
- 
- .video-container {
+.headBlck1 {
+    float: left;
+    width: 50%!important;
     overflow: hidden;
-    position: relative;
-    /*width:80%;*/
-    width: 700px;
-    margin: 0 auto;
-    max-width: 100%;
 }
 
-.video-container::after {
-    padding-top: 56.25%;
-    display: block;
-    content: '';
+.headBlck2 {
+    float: left;
+    width: 50%!important;
+    overflow: hidden;
 }
 
-.video-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+@media (max-width: 413px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+        /*grid-auto-rows: auto;*/
+        display: block;
+    }
+
+    .card {
+        min-height: 12.8rem;
+    }
+
+    .onepointfive {
+        font-size: 0.75em
+    }
+
+    .headlineImg {
+        display: none;
+    }
+
+    .headlineImgBlock {
+        display: none
+    }
+
+    .headBlck1 {
+        display: none
+    }
+    .headBlck2{width:100% !important;}
 }
 
-@media only screen and (max-width: 480px) {
-    /* Modal Content */
-    .modal-content {
+    @media (min-width: 627px) {
+        .grid-container {
+            grid-gap: 1rem;
+            display: block;
+        }
+
+        .card__side-by-side--m {
+            flex-flow: row nowrap;
+        }
+
+            .card__side-by-side--m img {
+                min-height: 100%;
+            }
+
+        .card--featured {
+            grid-row: auto / span 2;
+            grid-column: -1;
+        }
+
+        .onepointfive {
+            font-size: 1em
+        }
+
+        .headlineImg {
+            display: 100%;
+        }
+        /*.headBlck1 {
+        float: left;
+        width: 50% !important;
+        overflow: hidden;
+    }*/
+    }
+
+    @media (min-width: 836px) {
+        .padding-large--l {
+            padding: 3.2rem;
+        }
+
+    }
+
+    @media (min-width: 837px) {
+        .onepointfive {
+            font-size: 1.5em
+        }
+
+        .grid-container {
+            margin: auto;
+            display: grid;
+            grid-gap: 1.1312rem;
+            grid-template-columns: repeat(auto-fit, 12.8rem);
+            grid-auto-rows: 12.8rem;
+            grid-auto-flow: dense;
+            justify-content: center;
+            max-width: 75em;
+        }
+        .headBlck1 {
+            float: left;
+            width: 75%;
+            overflow: hidden;
+        }
+
+        .headBlck2 {
+            float: left;
+            width: 25%;
+            overflow: hidden;
+        }
+    }
+
+    .video-container {
+        overflow: hidden;
+        position: relative;
+        /*width:80%;*/
+        width: 700px;
+        margin: 0 auto;
+        max-width: 100%;
+    }
+
+        .video-container::after {
+            padding-top: 56.25%;
+            display: block;
+            content: '';
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+    @media only screen and (max-width: 860px) {
+        /* Modal Content */
+        .modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 5px;
+            border: 1px solid #888;
+            width: 100%;
+        }
+
+            .modal-content img {
+                width: 100%;
+            }
+
+        .myBtn {
+            cursor: pointer;
+            font-size: 0.8em
+        }
+
+        .headBlck1 {
+            float: left;
+            width: 100% !important;
+            overflow: hidden;
+        }
+
+        .headBlck2 {
+            float: left;
+            width: 100% !important;
+            overflow: hidden;
+        }
+    }
+
+    @media only screen and (max-width: 860px) {
+        /*.modal-content {
         background-color: #fefefe;
         margin: auto;
         padding: 5px;
         border: 1px solid #888;
-        width: 100%;
+        width: 70%;
+    }*/
     }
-
-        .modal-content img {
-            width: 100%;
-        }
 }

@@ -806,6 +806,7 @@ nav ul .nav-item a img {
         width: auto;
     }
     /*.img {width: 100%}*/
+
 }
 
 @media only screen and (min-width: 860px) {
@@ -838,6 +839,13 @@ nav ul .nav-item a img {
         width: 100%;
     }
     /*.img {width: 100%}*/
+    .modal-content {
+        background-color: #fefefe;
+        margin: auto;
+        padding: 5px;
+        border: 1px solid #888;
+        width: 70%;
+    }
 }
 
 @media only screen and (min-width: 1300px) {
